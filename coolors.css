@@ -24,14 +24,12 @@ main {
         width: 40%;
 
         .lLeft {
-            border: 1px solid greenyellow;
             height: 50%;
         }
 
         .lRight {
             display: inline-flex;
             flex-wrap: nowrap;
-            border: 2px solid blue;
             margin: 0% 2%;
             align-items: center;
             font-size: .8em;
@@ -51,27 +49,36 @@ main {
     }
     .right{
         display: flex;
-        justify-content: space-between ;
-        border: 2px solid rebeccapurple;
+        justify-content: space-between;
+        align-items: center;
         width: 22%;
+        a{
+            text-decoration: none;
+            font-weight: 550 ;
+        }
         .rLeft{
             display: flex;
             width: 100%;
-            .a{
-                display: flex;
-                margin: 0% 10%;
-                border: 2px solid red;
-                justify-content: space-between;
-                width: 65%;
+            a{
+                /* border: 2px solid red; */
+                padding: 0% 4%;
             }
         }
         .rRight{
             display: flex;
-            border: 2px solid red;
-            width: 100%;
+            /* border: 2px solid red; */
+            width: 150%;
+            
             button{
                 height: 50%;
-                border-radius: 15px;
+                border: none;
+                border-radius: 10px;
+                background-color: #005CE6;
+                
+                margin: 0% 0%;
+                padding: 4% 0%;
+                width: 90px;
+                font-size: 1em;
             }
         }
     }
