@@ -87,4 +87,91 @@ main {
 
 .down {
     border: 1px solid blue;
+    display: grid;
+    grid-template-columns: 35% 65%;
+    .left{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+        div{
+            /* border: 2px solid rebeccapurple; */
+            display: flex;
+            justify-content: center;
+            height: auto;
+            margin: 0em 6em;
+            text-align: center;
+            button{
+                margin: 2% 0;
+                height: 3.4em;
+                width: 250px;
+                border-radius: 10px;
+                border: none;
+                background-color: #0066FF;
+                font-weight: 700 ;
+            }
+        }
+        h1{
+            font-size: 3em;
+            font-weight: 900;
+            margin: 0.05% 0%;
+        }
+        p{
+            font-size: 1.1em;
+            margin: 0.05 0;
+
+        }
+    }
+    .right{
+        border: 2px solid red;
+        height: 100%;
+        display: flex;
+        .big{
+            border: 6px solid black;
+            height: 60vh;
+            position: relative;
+            z-index: 2;
+            margin-left: -4em;
+            img{
+                height: 100%;
+                width: auto;
+            }
+        }
+        .small{
+            border: 6px solid black;
+            height: 35vh;
+            position: relative(10px, -100px);
+            top: 3em;
+            left: -3em;
+            z-index: 10;
+            img{
+                height: 100%;
+                width: auto;
+            }
+        }
+        img{
+        }
+    }
+}
+.down .right{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@media (max-width: 768px) {
+    .down {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+    }
+
+    .down .right {
+        flex-direction: column;
+    }
+
+    .big, .small {
+        margin: 1em 0;
+        left: 0 !important;
+        top: 0 !important;
+    }
 }
