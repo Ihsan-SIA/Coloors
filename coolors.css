@@ -11,7 +11,7 @@ main {
 }
 
 .up {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     display: flex;
     justify-content: space-between;
     padding: 0% 1%;
@@ -20,7 +20,7 @@ main {
         display: flex;
         align-items: center;
         justify-content: space-around;
-        border: 1px solid black;
+        /* border: 1px solid black; */
         width: 40%;
 
         .lLeft {
@@ -36,7 +36,7 @@ main {
 
             .img {
                 width: min-content;
-                border: 1px solid rebeccapurple;
+                /* border: 1px solid rebeccapurple; */
                 img {
                     width: 3em;
                     height: auto;
@@ -86,7 +86,7 @@ main {
 
 
 .down {
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     display: grid;
     grid-template-columns: 35% 65%;
     .left{
@@ -123,7 +123,7 @@ main {
         }
     }
     .right{
-        border: 2px solid red;
+        /* border: 2px solid red; */
         height: 100%;
         display: flex;
         .big{
