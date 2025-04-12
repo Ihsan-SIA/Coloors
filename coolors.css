@@ -81,6 +81,7 @@ main {
 
 
 .down {
+    width: 100vw;
     display: grid;
     grid-template-columns: 35% 65%;
     .left{
@@ -122,6 +123,7 @@ main {
             border: 6px solid black;
             height: 60vh;
             position: relative;
+            left: 130px;
             z-index: 2;
             margin-left: -4em;
             img{
@@ -132,10 +134,12 @@ main {
         .small{
             border: 6px solid black;
             height: 35vh;
-            position: relative(10px, -100px);
+            position: relative;
             top: 3em;
             left: -3em;
             z-index: 10;
+            left: 150px;
+            top: 200px;
             img{
                 height: 100%;
                 width: auto;
