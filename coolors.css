@@ -244,8 +244,12 @@ main {
         text-align: center;
         width: 270px;
         height: 280px;
-        
 
+        .ios{
+            width: 5rem ;
+            height: auto;
+            margin-top: 10%;
+        }
         img {
             width: auto;
             height: 3em;
