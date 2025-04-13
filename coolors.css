@@ -255,6 +255,11 @@ main {
         h1{
             font-weight: bolder;
         }
+        p{
+            margin: 0 10%;
+            line-height: 25px;
+            font-weight: 350;
+        }
     }
 }
 
