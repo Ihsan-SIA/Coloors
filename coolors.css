@@ -1,5 +1,11 @@
 body {
     font-family: "Inter", sans-serif;
+    width: 500px;
+    height: 1500px;
+}
+a{
+    font-family: "Inter", sans-serif;
+    text-decoration: none;
 }
 
 main {
@@ -14,6 +20,7 @@ main {
     display: flex;
     justify-content: space-between;
     padding: 0% 1%;
+    border-bottom: 1px solid rgba(190, 190, 190, 0.371);
 
     .left {
         display: flex;
@@ -51,7 +58,7 @@ main {
         width: 22%;
         a{
             text-decoration: none;
-            font-weight: 550 ;
+            font-weight: 550;
         }
         .rLeft{
             display: flex;
@@ -69,7 +76,7 @@ main {
                 border: none;
                 border-radius: 10px;
                 background-color: #005CE6;
-                
+                cursor: pointer;
                 margin: 0% 0%;
                 padding: 4% 0%;
                 width: 90px;
@@ -100,9 +107,7 @@ main {
                 height: 3.4em;
                 width: 250px;
                 border-radius: 10px;
-                border: none;
-                background-color: #0066FF;
-                font-weight: 700 ;
+                font-weight: 700;
             }
         }
         h1{
@@ -137,15 +142,13 @@ main {
             position: relative;
             top: 3em;
             left: -3em;
-            z-index: 10;
+            z-index: 3;
             left: 150px;
             top: 200px;
             img{
                 height: 100%;
                 width: auto;
             }
-        }
-        img{
         }
     }
 }
@@ -171,3 +174,87 @@ main {
         top: 0 !important;
     }
 }
+
+.start{
+    background-color: #0a6bfc;
+    color: white;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    a{
+        color: white;
+    }
+}
+.start:hover
+{
+    background-color: #005CE6;
+}
+.explore{
+    background-color: white;
+    border: 1px solid rgba(214, 214, 214, 0.886);
+    cursor: pointer;
+}
+.explore:hover
+{
+    border-color: rgba(107, 106, 106, 0.886);
+}
+.prod{
+    margin: 8% 0;
+    background-color: white;
+    border: 1px solid;
+    border-color: #FF6154;
+    border-width: 1px;
+    cursor: pointer;
+}
+.card-container {
+    margin-top: 80px;
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px;
+  }
+  
+  .card {
+    background-color: #f7f7f8;
+    padding: 24px;
+    border-radius: 16px;
+    flex: 1 1 200px;
+    text-align: center;
+    position: relative;
+    max-width: 220px;
+    height: 250px;
+  }
+  
+  .card i {
+    font-size: 36px;
+    margin-bottom: 16px;
+    display: block;
+  }
+  
+  .card h3 {
+    font-size: 18px;
+    margin-bottom: 8px;
+  }
+  
+  .card p {
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .new-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #ffcbf2;
+    color: #ff007f;
+    font-size: 10px;
+    font-weight: bold;
+    padding: 4px 8px;
+    border-radius: 10px;
+  }
+  .apple-logo-icon
+  {
+    width: 100px;
+  }
+  
