@@ -97,7 +97,7 @@ main {
 
 
 .down {
-    width: 100vw;
+    width: 88vw;
     display: grid;
     grid-template-columns: 35% 65%;
 
@@ -143,10 +143,7 @@ main {
         .big {
             border: 6px solid black;
             height: 60vh;
-            position: relative;
-            left: 130px;
             z-index: 2;
-            margin-left: -4em;
 
             img {
                 height: 100%;
@@ -158,8 +155,6 @@ main {
             border: 6px solid black;
             height: 35vh;
             position: relative;
-            top: 3em;
-            left: -3em;
             z-index: 3;
             left: 150px;
             top: 200px;
@@ -231,9 +226,29 @@ main {
     border-width: 1px;
     cursor: pointer;
 }
-
+.secondPage{
+    width: 100vw;
+}
+.view{
+    display: block;
+}
+.noview{
+    display: none;
+}
+.card:hover .view{
+    display: none;
+}
+.card:hover .noview{
+    display: block;
+    position: relative;
+    width: 50%;
+    justify-self: center;
+    top: 45%;
+    font-size: 1em;
+}
 .cards {
-    width: 95vw;
+    justify-self: center;
+    width: 85vw;
     margin-top: 80px;
     display: flex;
     justify-content: space-between;
@@ -249,7 +264,6 @@ main {
         text-align: center;
         width: 270px;
         height: 280px;
-        
         .ios {
             width: 5rem;
             height: auto;
